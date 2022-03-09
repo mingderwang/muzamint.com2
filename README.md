@@ -1,10 +1,10 @@
-# template
+# A Gatsby Project
 > A Quick Start for Gatsby Project with MDX Plugin and TailwindCSS/DaisyUI.
  
-## refer to
+## Refer and Inspired by
 https://www.sitepoint.com/gatsby-mdx-blog/
 
-## build and run
+## Build and Run
 ```
 yarn
 ```
@@ -13,7 +13,16 @@ then
 yarn dev
 ```
 
-## deploy with vercel
+## Deploy with vercel
 ```
 vercel
 ```
+
+## Features
+* Gatsby
+* MDX
+* Tailwind
+* DaisyUI
+* vercel (now)
+* Blogs
+

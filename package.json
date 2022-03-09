@@ -43,5 +43,16 @@
     "vercel"
   ],
   "author": "Ming-der Wang",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "vercel": "^24.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/mingderwang/gatsby-mdx-daisy-tailwind-template/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mingderwang/gatsby-mdx-daisy-tailwind-template"
+  },
+  "homepage": "https://github.com/mingderwang/gatsby-mdx-daisy-tailwind-template/blob/main/README.md"
 }
