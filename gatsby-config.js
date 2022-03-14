@@ -1,8 +1,8 @@
 // gatsby-config.js
 module.exports = {
   siteMetadata: {
-    title: `gatsby-mdx-daisy-tailwind-template`,
-    description: `A Quick Start for Gatsby Project with MDX Plugin and TailwindCSS/DaisyUI"`,
+    title: `MS-hack Home Page`,
+    description: `We provide professional blockchains, smart contracts, and dapps services.`,
     author: `@mingderwang`,
   },
   plugins: [

@@ -7,23 +7,6 @@ export default function IndexPage({ data }) {
   return (
     <>
       <Layout>
-        <div class="card w-96 bg-base-100 shadow-xl">
-          <figure>
-            <img
-              src="https://api.lorem.space/image/shoes?w=400&h=225"
-              alt="Shoes"
-            />
-          </figure>
-          <div class="card-body">
-            <h2 class="card-title">Shoes!</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
-            <div class="card-actions justify-end">
-              <button class="btn btn-primary">Buy Now</button>
-            </div>
-          </div>
-        </div>
-        <button class="btn">Button</button>
-        <button class="btn btn-link"> Link </button>
         {data.allMdx &&
           data.allMdx.nodes.map(({ id, excerpt, frontmatter, slug }) => (
             <Box
@@ -39,12 +22,6 @@ export default function IndexPage({ data }) {
             >
               <Link as={GatsbyLink} to={`/${slug}`}>
                 <Heading>{frontmatter.title}</Heading>
-                <Box as="p" variant="styles.p">
-                  {frontmatter.date}
-                </Box>
-                <Box as="p" variant="styles.p">
-                  {excerpt}
-                </Box>
               </Link>
             </Box>
           ))}

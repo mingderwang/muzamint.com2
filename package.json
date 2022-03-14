@@ -1,10 +1,10 @@
 {
-  "name": "gatsby-mdx-daisy-tailwind-template",
+  "name": "ms-hack-home-2",
   "version": "0.0.1",
   "description": "A Quick Start for Gatsby Project with MDX Plugin and TailwindCSS/DaisyUI.",
   "private": true,
   "scripts": {
-    "dev": "rm -rf .cache/caches && gatsby develop",
+    "dev": "gatsby develop",
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
