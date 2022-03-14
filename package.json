@@ -1,6 +1,6 @@
 {
   "name": "ms-hack-home-2",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A Quick Start for Gatsby Project with MDX Plugin and TailwindCSS/DaisyUI.",
   "private": true,
   "scripts": {
@@ -48,11 +48,11 @@
     "vercel": "^24.0.0"
   },
   "bugs": {
-    "url": "https://github.com/mingderwang/gatsby-mdx-daisy-tailwind-template/issues"
+    "url": "https://github.com/mingderwang/muzamint.com2/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mingderwang/gatsby-mdx-daisy-tailwind-template"
+    "url": "git+https://github.com/mingderwang/muzamint.com2"
   },
-  "homepage": "https://github.com/mingderwang/gatsby-mdx-daisy-tailwind-template/blob/main/README.md"
+  "homepage": "https://muzamint.com"
 }
