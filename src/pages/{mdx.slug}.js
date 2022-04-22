@@ -1,7 +1,6 @@
 import { graphql } from "gatsby";
 import { MDXRenderer } from "gatsby-plugin-mdx";
 import React from "react";
-import { Box } from "theme-ui";
 
 export default function PostPage({ data }) {
   const {
@@ -10,9 +9,7 @@ export default function PostPage({ data }) {
   } = data.mdx;
   return (
     <>
-      <Box as="h1" variant="styles.h1" fontSize="4xl">
-        {title}
-      </Box>
+      <button className="btn btn-secondary">{title}</button>
       <MDXRenderer>{body}</MDXRenderer>
     </>
   );

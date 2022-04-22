@@ -26,6 +26,7 @@ export default function IndexPage({ data }) {
             </Box>
           ))}
       </Layout>
+      <button className="btn btn-info">BUY ME</button>
     </>
   );
 }
