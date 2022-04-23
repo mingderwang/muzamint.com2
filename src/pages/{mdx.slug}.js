@@ -7,6 +7,7 @@ export default function PostPage({ data }) {
     body,
     frontmatter: { title },
   } = data.mdx;
+  console.log("body", body);
   return (
     <>
       <button className="btn btn-secondary">{title}</button>

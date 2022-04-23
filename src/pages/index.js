@@ -1,6 +1,6 @@
 import { graphql, Link as GatsbyLink } from "gatsby";
 import React from "react";
-import { Box, Heading, Link } from "theme-ui";
+import { Link } from "theme-ui";
 import Layout from "../components/layout";
 
 export default function IndexPage({ data }) {
@@ -9,24 +9,23 @@ export default function IndexPage({ data }) {
       <Layout>
         {data.allMdx &&
           data.allMdx.nodes.map(({ id, excerpt, frontmatter, slug }) => (
-            <Box
-              key={id}
-              as="article"
-              sx={{
-                mb: 4,
-                p: 3,
-                boxShadow: "0 10px 15px -3px rgba(0, 0, 0, 0.1)",
-                border: "1px solid #d1d1d1",
-                borderRadius: "15px",
-              }}
-            >
-              <Link as={GatsbyLink} to={`/${slug}`}>
-                <Heading>{frontmatter.title}</Heading>
-              </Link>
-            </Box>
+            <div className="card w-96 bg-base-100 shadow-xl">
+              <figure>
+                <img
+                  src="https://api.lorem.space/image/shoes?w=400&h=225"
+                  alt="Shoes"
+                />
+              </figure>
+              <div className="card-body">
+                <div className="card-actions justify-end">
+                  <Link as={GatsbyLink} to={`/${slug}`}>
+                    <h2 className="card-title">{frontmatter.title}</h2>
+                  </Link>
+                </div>
+              </div>
+            </div>
           ))}
       </Layout>
-      <button className="btn btn-info">BUY ME</button>
     </>
   );
 }

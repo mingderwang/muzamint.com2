@@ -1,6 +1,6 @@
 {
   "name": "ms-hack-home-2",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A Quick Start for Gatsby Project with MDX Plugin and TailwindCSS/DaisyUI.",
   "private": true,
   "scripts": {
