@@ -1,6 +1,8 @@
 import { graphql } from "gatsby";
 import { MDXRenderer } from "gatsby-plugin-mdx";
 import React from "react";
+import Card from "../components/card";
+const shortcodes = { Card };
 
 export default function PostPage({ data }) {
   const {
@@ -11,7 +13,7 @@ export default function PostPage({ data }) {
   return (
     <>
       <button className="btn btn-secondary">{title}</button>
-      <MDXRenderer>{body}</MDXRenderer>
+      <MDXRenderer components={shortcodes}>{body}</MDXRenderer>
     </>
   );
 }

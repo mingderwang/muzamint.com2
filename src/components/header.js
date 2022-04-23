@@ -1,37 +1,36 @@
 import { Link as GatsbyLink } from "gatsby";
 import React from "react";
-import { Box, Button, Flex, Heading, Link, useColorMode } from "theme-ui";
+
+import { graphql, useStaticQuery } from "gatsby";
+export const useSiteMetadata = () => {
+  const { site } = useStaticQuery(
+    graphql`
+      query SITE_DATA_QUERY {
+        site {
+          siteMetadata {
+            title
+            description
+          }
+        }
+      }
+    `
+  );
+  return site.siteMetadata;
+};
 
 export const Header = ({ siteTitle, siteDescription }) => {
-  const [colorMode, setColorMode] = useColorMode();
+  const { title, description } = useSiteMetadata();
   return (
-    <Box as="header" sx={{ bg: "highlight", mb: "1.45rem" }}>
-      <Box
-        as="div"
-        sx={{
-          m: "0 auto",
-          maxWidth: "640px",
-          p: "1.45rem 1.0875rem",
-        }}
-      >
-        <Flex>
-          <Box sx={{ flex: "1 1 auto", flexDirection: "column" }}>
-            <Link as={GatsbyLink} to="/">
-              <Heading>{siteTitle}</Heading>
-            </Link>
-            <Box as="p" variant="styles.p">
-              {siteDescription}
-            </Box>
-          </Box>
-          <Button
-            onClick={(e) => {
-              setColorMode(colorMode === "default" ? "dark" : "default");
-            }}
-          >
-            {colorMode === "default" ? "Dark" : "Light"}
-          </Button>
-        </Flex>
-      </Box>
-    </Box>
+    <>
+      <iframe
+        src="https://mars.nasa.gov/layout/embed/image/insightweather/"
+        width="800"
+        height="530"
+        scrolling="no"
+        frameborder="0"
+      ></iframe>
+      <p>{title}</p>
+      <p>{description}</p>
+    </>
   );
 };

@@ -1,0 +1,20 @@
+---
+title: demo emotion in mdx
+date: 2022-04-23
+---
+import { css, cx } from '@emotion/css'
+
+# demo
+ <div
+    className={css`
+      padding: 32px;
+      background-color: hotpink;
+      font-size: 24px;
+      border-radius: 4px;
+      &:hover {
+        color: 'darkgreen';
+      }
+    `}
+  >
+    Hover to change color.
+  </div>

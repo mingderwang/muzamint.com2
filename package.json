@@ -11,7 +11,8 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
-    "@emotion/react": "^11.8.1",
+    "@emotion/css": "^11.9.0",
+    "@emotion/react": "*",
     "@emotion/styled": "^11.8.1",
     "@mdx-js/mdx": "v1",
     "@mdx-js/react": "v1",
